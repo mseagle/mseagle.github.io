@@ -5,7 +5,22 @@
     <title>Jeon Min Jeong</title>
     <script src="./main.js"></script>
     <style>
-     img {
+    * {
+    	margin:0px; padding:0px;
+    }
+    .container {
+    	margin:0px auto 10px auto 
+    	<!-- top right bottom left -->
+    	<!-- 중앙정렬처럼 하기 위해 auto를 넣어줌 알아서 계산함 -->
+    	background-color:#666666
+    	padding:0px
+    	text-align:center;
+    }
+    #myphoto, #myinfo {
+    	backgroud-color:#3300ff
+    	border : 2px solid #ff6600;
+    }
+    #myphoto > img {
      	width:640px;
      	border-top:4px solid #666666;
      	border-right:4px dashed #666666;
@@ -15,8 +30,11 @@
     </style>
 </head>
 <body>
-<h1>HELLO WORLD</h1>
-<div class="greeting"> GREETING </div>
-<img src="./images/sail.jpg" alt="돛 사진입니다. 안타깝게도 사진이 안 나왔나보군요" title="돛 사진입니다." border="3px">
+	<div class="container">
+		<div id="myphoto">
+			<img src="./images/sail.jpg" alt="돛사진" title="돛돛돛">
+		</div>
+		<div id="myinfo"></div>
+	</div>
 </body>
 </html>
