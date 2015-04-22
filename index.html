@@ -27,14 +27,55 @@
      	border-bottom:4px solid #666666;
      	border-left:4px solid #666666;
      }
+     
+     #myinfo {
+     	text-align:center;
+     }
+     #myinfo ol{
+     	margin::30px auto 30px auto;
+     	list-style:square;
+     }
+     #myinfo > ol > li{
+     	padding:5px;
+     	font-size:1.4em;
+     }
+     #myinfo > ol > li > span.label {
+     		text-decoration:underline;
+     		color:#ff0000;
+     		font-family:"돋움체"
+     }
+     #myinfo > ol > li > span.content {
+     		text-decoration:underline;
+     		color:#ff0000;
+     		font-family:"궁서체"
+     }
     </style>
 </head>
 <body>
 	<div class="container">
 		<div id="myphoto">
-			<img src="./images/sail.jpg" alt="돛사진" title="돛돛돛">
+			<img src="./images/sail.jpg" alt="돛사진" title="돛돛돛" >
 		</div>
-		<div id="myinfo"></div>
+		<div id="myinfo">
+			<ol>
+				<li>
+					<span class="label">이&nbsp;&nbsp;&nbsp;&nbsp;름</span>
+					<span class="content">전민정</span>
+				</li>
+				<li>
+					<span class="label">이메일</span>
+					<span class="content">alswjd135792@gmail.com</span>
+				</li>
+				<li>
+					<span class="label">취미</span>
+					<span class="content"> 개발 푸하하</span>
+				</li>
+				<li>
+					<span class="label">선호언어</span>
+					<span class="content">아직........ sql?</span> 
+				</li>
+			</ol>
+		</div>
 	</div>
 </body>
 </html>
